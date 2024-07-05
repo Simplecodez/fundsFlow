@@ -46,7 +46,7 @@ COPY . .
 RUN npm run build
 
 # Copy the views folder for serving email templates
-RUN npm run copy-files
+# RUN npm run copy-files
 
 ################################################################################
 # Create a new stage to run the application with minimal runtime dependencies
