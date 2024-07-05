@@ -29,7 +29,7 @@ const registerValidationSchema = Joi.object({
   email: emailRules,
   businessType: Joi.string().valid('Retail', 'Wholesale').required(),
   reason: Joi.string().required(),
-  phoneNumber: Joi.string()
+  phoneNumber: Joi.string().required()
 });
 
 export { registerValidationSchema };
