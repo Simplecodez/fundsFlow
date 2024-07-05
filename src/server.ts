@@ -5,6 +5,7 @@ import './diregistry/di';
 import { app } from './app';
 
 let server: any;
+const port = process.env.PORT || 4000;
 const mongoDBConnection = new MongoDBConnection(process.env.MONGODB_CONNECTION_URI as string);
 mongoDBConnection
   .connect()
